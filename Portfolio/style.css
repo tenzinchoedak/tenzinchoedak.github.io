@@ -1,0 +1,316 @@
+/** Globol Setting **/
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.2fr;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  margin-top: 50px;
+  margin-right: 80px;
+  
+}
+.logo {
+  margin: 0 40px 0 60px;
+}
+ul {
+  border-bottom: 1.5px solid black;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+ul li {
+  list-style: none;
+  margin-top: 12px;
+  margin: 12px 20px 0 20px;
+  
+}
+ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;  
+  padding: 5px;
+  
+}
+ul li a:hover {
+ border-radius: 50%;
+ background-color: #767676;
+ color: white;
+}
+main {
+  margin-right: 13rem;
+  margin-top: -2rem; 
+}
+
+.moutian {
+  height: 200px;
+  width: 100%;
+  margin-bottom: -8px;
+}
+footer {
+  background-color: #767676;
+  height: 8rem;  
+}
+footer section {
+  display: flex;
+  margin-top: 50px;
+}
+.copy-richt {
+  width: 50%;
+}
+.copy-richt i {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-left: 130px;
+}
+.copy-richt a {
+  color: black;
+  font-size: 14px;
+  margin-left: 15px;
+}
+.social-links {
+  width: 50%;
+  height: 45px;
+  text-align: center;
+}
+.social-links a {
+  font-size: 30px;
+  margin-top: 5px;
+  color: black;
+  margin-left: 10px;
+}
+.social-links a:hover {
+  color:lightgray;
+}
+/**for ipad and tablet**/
+@media screen and (max-width: 1024px) {
+ html, body {
+    height: 100%;
+ }
+ body {
+   display: flex;
+   flex-direction: column;
+ }
+ header {
+   flex: 0.5 0 auto;
+ }
+main {
+  flex: 1;
+  margin-bottom: 8rem;
+}
+ footer {
+   flex-shrink: 0;
+ }
+  .imgs {
+    position: static !important;
+    margin-left: 15rem;
+  }
+  .imgs img {
+    position: static !important; 
+  }
+  .sun {
+   width: 450px !important;
+  }
+  .birds {
+    width: 100%;
+    margin-top: -8rem;
+    margin-left: 5rem;
+  }
+  .cloud {
+    display: none;
+  }
+
+.contact-main {
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 5rem;
+}
+form {
+  margin-left: 15%;
+}
+.contact-input #name {
+  width: 25rem !important;
+  height: 2rem !important;
+}
+.contact-input #email {
+  width: 25rem !important;
+  height: 2rem !important;
+}
+.contact-input textarea {
+  width: 25rem !important;
+  height: 10rem !important;
+}
+.contact-information {
+  margin-left: 5rem !important;
+  border: none !important;
+}
+.about-main {
+  width: auto;
+  margin-bottom: 8rem;
+}
+.copy-richt i {
+  margin-left: 50px;
+}
+}
+/**for mobile**/
+@media only screen and (max-width: 600px) {
+  html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+  }
+  .massage {
+   width: 15rem !important;
+   margin-left: 38% !important;
+   margin-top: 8rem !important;
+  }
+  .nav-menu{
+    border: none;
+    flex-direction: row;
+  }
+  .imgs {
+    display: none;
+  }
+}
+/** Home page **/
+.massage {
+
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 60px;
+  width: 50rem;
+}
+.imgs {
+  position: absolute;
+  width: 30%;
+  left: 55rem;
+  top: 8rem;
+}
+.imgs img {
+  position: absolute; 
+  transition: left 3s, top 1s;
+}
+.imgs:hover .birds {
+  left: 1%;
+  top: 1%;
+}
+.imgs:hover .cloud {
+  left: 0.3%;
+}
+
+.birds {
+  width: 70%;
+  top: 3rem;
+  left: 9rem;
+}
+.sun {
+  width: 80%;
+}
+.cloud {
+  width: 30%;
+  top: 14rem;
+  left: 9rem;
+}
+
+/** About Page **/
+.about-nav {
+ border-radius: 50%;
+ background-color: #767676;
+ color: white;
+}
+.about-main {
+  height: 200px;
+  width: 100%;
+  margin-bottom: -8px;
+  display: flex;
+}
+.about-title {
+  text-align: center;
+  padding: 0 5rem 0 5rem;
+  width: 50%;
+  height: 22rem;
+  margin-left: 10%;
+}
+.tenzinphoto {
+  border-radius: 5%;
+  height: 350px;
+}
+/** Contact page **/
+.Contact-nav {
+  border-radius: 50%;
+  background-color: #767676;
+  color: white;
+}
+.contact-main {
+  margin-left: 15%;
+  display: flex;
+}
+.contact-input h1 {
+  text-align: center;
+}
+.contact-input {
+  margin-left: 10%;
+}
+.send {
+ margin-left: 25%;
+ width: 10rem;
+ margin-top: 5px;
+ color: white;
+ background-color: #767676;
+}
+.contact-input #name {
+  width: 20rem;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact-input #email {
+  width: 20rem;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact-input textarea {
+  width: 20rem;
+  height: 8rem;
+}
+.contact-information {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 20%;
+  border-left: 1px solid black;
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin-top: 10px;
+}
+.contact-links i {
+  margin-top: 38px;
+  margin-left: 5rem;
+}
+.my-adresse {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  height: 80%;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+.my-adresse a {
+  color: black;
+  text-decoration: none;
+}
