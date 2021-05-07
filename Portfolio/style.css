@@ -226,6 +226,19 @@ footer section {
   color: black;
   text-decoration: none;
 }
+/** Blog page **/
+.blog-nav {
+  border-radius: 50%;
+  background-color: #767676;
+  color: white;
+}
+
+/** Work page**/
+.work-nav {
+  border-radius: 50%;
+  background-color: #767676;
+  color: white;
+}
 
 /**for ipad and tablet**/
 @media screen and (max-width: 1024px) {
