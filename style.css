@@ -402,15 +402,31 @@ footer section {
    }
    .about-title p{
      height: 10rem;
+     font-size: 12px;
    }
    .tenzinphoto {
+     margin-top: 4rem;
+     border: 1px solid red;
      height: 250px;
    }
   .contact-main {
-    margin-bottom: -5rem;
+    width: 100%;
+    margin: 0;
+  }
+  .contact-input {
+    margin: 0;
+    width: 100%;
+    text-align: center;
   }
   .contact-input h1 {
-    margin-left: 5rem;
+    width: 100%;
+    font-size: 20px;
+  }
+  form {
+   margin: 0;
+  }
+  .send {
+    margin: 0;
   }
    .contact-input #name {
      width: 15rem;
@@ -427,4 +443,19 @@ footer section {
    .contact-information {
     display: none;
    }
+   footer {
+     height: 5rem;
+   }
+   footer section {
+     margin-top: 20px;
+   }
+   .copy-richt a {
+     display: none;
+   }
+   .copy-richt i {
+     width: 100%;
+     margin-left: 10px;
+   }
+   
+
  }
