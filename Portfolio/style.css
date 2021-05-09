@@ -329,20 +329,26 @@ footer section {
      margin: 0;
    }
    .logo {
-     margin: 10px;
+     height: 65px;
+     margin: 20px;
    }
-   .btn {
-     background-color: white;
-     border: none;
-     position: fixed;
-     color: black;
-     font-size: 35px;
-     margin-top: 30px;
-     margin-left: 85%;
-     display: block;
+   .line {
+     width: 30px;
+     height: 3px;
+     background-color: #2C6C7E;
+     margin: 5px;
+   }
+  
+   .hamburger {
+     position: absolute;
+     cursor: pointer;
+     right: 5%;
+     top: 4%;
+     z-index: 2;
    }
    .nav-menu{
     display: flex;
+    position: fixed;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -351,16 +357,22 @@ footer section {
     padding: 0;
     margin: 0;
     justify-content: center;
-    display: none;
+    clip-path: circle(100px at 90% -15%);
+    -webkit-clip-path: circle(100px at 90% -15%);
+    transition: all 1s ease-out;
+   }
+   .nav-menu.open {
+    clip-path: circle(1050px at 90% -15%);
+    -webkit-clip-path: circle(1050px at 90% -15%);
    }
    .nav-menu li {
      text-align: center;
      margin: 25px;
    }
+  
    .nav-menu li a {
      color: white;
      font-size: 25px;
-     border-bottom: 1px solid white;
    }
    .imgs {
      display: none;
@@ -385,10 +397,12 @@ footer section {
    .contact-main {
     display: flex;
     flex-direction: column;
-    height: 50px;
+    height: 100%;
+    width: 80%;
+    margin: 15px 10px 15px 1px;
    }
    form {
-     margin-left: 15%;
+     
    }
    .contact-input #name {
      width: 15rem;

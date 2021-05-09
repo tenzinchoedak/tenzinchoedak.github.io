@@ -1,9 +1,8 @@
-//This is for the mobile menu onlick
-function myFunction() {
-  var x = document.querySelector(".nav-menu");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+/**this is for the hamburger navigation**/
+
+const hamburger = document.querySelector(".hamburger");
+const navName = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  navName.classList.toggle("open");
+});
