@@ -30,11 +30,11 @@
 <main class="contact-main">
   <section class="contact-input">
     <h1>Contact Me</h1>
-    <form action="#" method="GET">
-    <input type="name" placeholder="Your name" id="name"><br>
-    <input type="email" placeholder="Email" id="email"><br>
-    <textarea id="text" cols="30" rows="10" placeholder="Massage"></textarea><br>
-    <input type="submit" value="Send" class="send">
+    <form action="https://formsubmit.co/tenzin.choedak@powercoders.org" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your name" id="name" required><br>
+    <input type="text" name="email" placeholder="Your Email" id="email" required><br>
+    <textarea name="massage" id="text" cols="30" rows="10" placeholder="Massage" required></textarea><br>
+    <button type="submit" class="send">Send</button>
   </form>
   </section>
   <section class="contact-information">

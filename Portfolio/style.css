@@ -106,6 +106,10 @@ footer section {
   margin-left: 60px;
   width: 50rem;
 }
+.main-h1 {
+  font-size: 65px;
+  margin-bottom: 0;
+}
 .imgs {
   position: absolute;
   width: 30%;
@@ -178,11 +182,19 @@ footer section {
   margin-left: 10%;
 }
 .send {
- margin-left: 25%;
- width: 10rem;
- margin-top: 5px;
- color: white;
- background-color: #767676;
+  margin-top: 10px;
+  margin-left: 30%;
+  border-style: none;
+  width: 130px;
+  height: 30px;
+  font-size: 18px;
+  background: #767676;
+  color: white;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.send:hover {
+  background-color: black;
 }
 .contact-input #name {
   width: 20rem;
@@ -394,16 +406,12 @@ footer section {
    .tenzinphoto {
      height: 250px;
    }
-   .contact-main {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 80%;
-    margin: 15px 10px 15px 1px;
-   }
-   form {
-     
-   }
+  .contact-main {
+    margin-bottom: -5rem;
+  }
+  .contact-input h1 {
+    margin-left: 5rem;
+  }
    .contact-input #name {
      width: 15rem;
      height: 2rem;
