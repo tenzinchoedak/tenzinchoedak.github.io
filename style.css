@@ -331,12 +331,15 @@ footer section {
    body {
      height: 100%;
      margin: 0;
+   }main {
+     margin: 0;
+     padding: 0;
    }
    .massage {
-    width: 15rem;
-    margin-left: 38%;
-    margin-top: 8rem;
+    width: 350px;
+    margin: auto;
    }
+   
    nav {
      margin: 0;
    }
@@ -406,7 +409,6 @@ footer section {
    }
    .tenzinphoto {
      margin-top: 4rem;
-     border: 1px solid red;
      height: 250px;
    }
   .contact-main {
@@ -445,6 +447,9 @@ footer section {
    }
    footer {
      height: 5rem;
+   }
+   .mountian-div {
+     height: 23%;
    }
    footer section {
      margin-top: 20px;
