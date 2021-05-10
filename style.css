@@ -264,22 +264,28 @@ footer section {
   header {
     flex: 0.5 0 auto;
   }
+  ul {
+    margin-left: -2rem;
+  }
  main {
    flex: 1;
-   margin-bottom: 8rem;
+   margin: auto;
+ }
+ .massage {
+   margin: auto;
  }
   footer {
     flex-shrink: 0;
   }
    .imgs {
      position: static;
-     margin-left: 15rem;
+     margin: auto;
    }
    .imgs img {
      position: static; 
    }
    .sun {
-    width: 450px;
+    width: 250px;
    }
    .birds {
      width: 100%;
@@ -289,14 +295,18 @@ footer section {
    .cloud {
      display: none;
    }
+   .moutian {
+     margin-bottom: -1rem;
+   }
  
  .contact-main {
+   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 5rem;
+  margin: auto;
  }
  form {
-   margin-left: 15%;
+  text-align: center;
  }
  .contact-input #name {
    width: 25rem;
@@ -313,17 +323,25 @@ footer section {
  .contact-information {
    margin-left: 5rem;
    border: none;
+   margin-top: 0;
+   display: none;
+ }
+ .send {
+  margin: auto;
  }
  .about-main {
    width: auto;
-   margin-bottom: 8rem;
+  margin: auto;
+ }
+ .about-title {
+   margin-left: 0;
  }
  .copy-richt i {
    margin-left: 50px;
  }
  }
  /**for mobile**/
- @media only screen and (max-width: 600px) {
+ @media screen and (max-width: 600px) {
    html {
      height: 100%;
      margin: 0;
