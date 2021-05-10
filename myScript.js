@@ -6,3 +6,6 @@ const navName = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", () => {
   navName.classList.toggle("open");
 });
+
+
+

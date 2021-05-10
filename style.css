@@ -107,8 +107,9 @@ footer section {
   width: 50rem;
 }
 .main-h1 {
-  font-size: 65px;
+  font-size: 50px;
   margin-bottom: 0;
+  font-family: 'Goblin One', cursive;
 }
 .imgs {
   position: absolute;
@@ -239,17 +240,77 @@ footer section {
   text-decoration: none;
 }
 /** Blog page **/
+
 .blog-nav {
   border-radius: 50%;
   background-color: #767676;
   color: white;
 }
-
+main {
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+.myblog {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+.art-blog {
+  width: 90%;
+  height: 60%;
+  display: flex;
+  margin: 60px;
+}
+.blogpic {
+  background-color: darksalmon;
+  height: 65%;
+  width: 40%;
+  margin: auto;
+}
+.bloginfo {
+  width: 50%;
+  margin: auto;
+}
 /** Work page**/
 .work-nav {
   border-radius: 50%;
   background-color: #767676;
   color: white;
+}
+main .projects {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-left: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .projects .project1, .project2, .project3 {
+  height: 80%;
+  width: 26%;
+  margin: 40px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 5px #aaaaaa;
+}
+main .projects .project1:hover{
+  box-shadow: 10px 10px 8px #aaaaaa;
+}
+.project1 {
+  cursor: pointer;
+  background-image: url(/img/mywebsite.jpg);
+  background-size: 24rem;
+}
+.project2:hover {
+  box-shadow: 10px 10px 8px #aaaaaa;
+  cursor: pointer;
+  background-color: darkgoldenrod;
+}
+.project3:hover {
+  box-shadow: 10px 10px 8px #aaaaaa;
+  cursor: pointer;
+  background-color: darkslategrey;
 }
 
 /**for ipad and tablet**/
@@ -298,7 +359,10 @@ footer section {
    .moutian {
      margin-bottom: -1rem;
    }
- 
+   main .projects .project1, .project2, .project3 {
+     height: 13rem;
+     width: 23rem;
+   }
  .contact-main {
    width: 100%;
   display: flex;
@@ -478,6 +542,13 @@ footer section {
    .copy-richt i {
      width: 100%;
      margin-left: 10px;
+   } 
+   main .projects {
+     margin: auto;
+     margin-top: 5rem;
+   } 
+   main .projects .project1, .project2, .project3 {
+     height: 13rem;
+     width: 23rem;
    }
-   
  }
