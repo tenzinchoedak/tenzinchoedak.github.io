@@ -283,7 +283,6 @@ main .projects {
   width: 100%;
   margin: auto;
   margin-top: 3rem;
-  margin-left: 7rem;
   display: flex;
   flex-wrap: wrap;
 }
