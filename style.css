@@ -114,25 +114,25 @@ footer section {
 .imgs {
   position: absolute;
   width: 30%;
-  left: 55rem;
+  left: 40rem;
   top: 8rem;
 }
 .imgs img {
   position: absolute; 
-  transition: left 3s, top 1s;
+  transition: left 5s, top 1s;
 }
 .imgs:hover .birds {
   left: 1%;
   top: 1%;
 }
 .imgs:hover .cloud {
-  left: 0.3%;
+  left: 0.05%;
 }
 
 .birds {
   width: 70%;
-  top: 3rem;
-  left: 9rem;
+  top: 1rem;
+  left: 20rem;
 }
 .sun {
   width: 80%;
@@ -140,7 +140,7 @@ footer section {
 .cloud {
   width: 30%;
   top: 14rem;
-  left: 9rem;
+  left: 20rem;
 }
 
 /** About Page **/
@@ -183,8 +183,6 @@ footer section {
   margin-left: 10%;
 }
 .send {
-  margin-top: 10px;
-  margin-left: 30%;
   border-style: none;
   width: 130px;
   height: 30px;
@@ -260,17 +258,16 @@ main {
   width: 90%;
   height: 60%;
   display: flex;
-  margin: 60px;
 }
 .blogpic {
-  background-color: darksalmon;
-  height: 65%;
+  background-color: rgba(173, 152, 145, 0.438);
+  height: 90%;
   width: 40%;
   margin: auto;
+  margin-right: 0;
 }
 .bloginfo {
   width: 50%;
-  margin: auto;
 }
 /** Work page**/
 .work-nav {
@@ -300,6 +297,7 @@ main .projects .project1:hover{
   cursor: pointer;
   background-image: url(/img/mywebsite.jpg);
   background-size: 24rem;
+  background-size: cover;
 }
 .project2:hover {
   box-shadow: 10px 10px 8px #aaaaaa;
@@ -321,15 +319,13 @@ main .projects .project1:hover{
     display: flex;
     flex-direction: column;
   }
-  header {
-    flex: 0.5 0 auto;
-  }
   ul {
     margin-left: -2rem;
   }
  main {
    flex: 1;
    margin: auto;
+   margin-top: 10rem;
  }
  .massage {
    margin: auto;
@@ -367,6 +363,7 @@ main .projects .project1:hover{
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 13rem;
  }
  form {
   text-align: center;
@@ -395,6 +392,7 @@ main .projects .project1:hover{
  .about-main {
    width: auto;
   margin: auto;
+  margin-top: 15rem;
  }
  .about-title {
    margin-left: 0;
@@ -402,6 +400,17 @@ main .projects .project1:hover{
  .copy-richt i {
    margin-left: 50px;
  }
+ .bogmain {
+   margin: 0;
+ }
+.blogpic {
+ height: 50%;
+ width: 70%;
+}
+.bloginfo {
+ height: 50%;
+ margin-top: 6rem;
+}
  }
  /**for mobile**/
  @media screen and (max-width: 600px) {
@@ -415,6 +424,7 @@ main .projects .project1:hover{
    }main {
      margin: 0;
      padding: 0;
+     margin-top: 7rem;
    }
    .massage {
     width: 350px;
@@ -477,12 +487,13 @@ main .projects .project1:hover{
      height: 0;
    }
    .about-main {
-     margin: 5px 25px 20px 25px;
+   margin: 8rem 1rem 5rem 2rem; 
    }
    .about-title {
      font-size: 12px;
      padding: 0;
      padding-right: 15px;
+     margin-top: 2rem;
    }
    .about-title p{
      height: 10rem;
@@ -495,6 +506,7 @@ main .projects .project1:hover{
   .contact-main {
     width: 100%;
     margin: 0;
+    margin-top: 8rem;
   }
   .contact-input {
     margin: 0;
@@ -544,10 +556,21 @@ main .projects .project1:hover{
    } 
    main .projects {
      margin: auto;
-     margin-top: 5rem;
    } 
    main .projects .project1, .project2, .project3 {
      height: 13rem;
      width: 23rem;
+   }
+   .myblog {
+     margin-top: 3rem;
+   }
+   .bloginfo {
+     font-size: 12px;
+   }
+   .btnblog {
+     font-size: 10px;
+   }
+   .blogpic {
+     height: 40%;
    }
  }
