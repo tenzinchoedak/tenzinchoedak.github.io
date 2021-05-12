@@ -172,9 +172,10 @@ footer section {
   background-color: #767676;
   color: white;
 }
+
 .contact-main {
-  margin-left: 15%;
   display: flex;
+  margin-left: 8rem;
 }
 .contact-input h1 {
   text-align: center;
@@ -212,7 +213,7 @@ footer section {
 .contact-information {
   display: flex;
   margin-top: 30px;
-  margin-left: 20%;
+  margin-left: 15%;
   border-left: 1px solid black;
 }
 .contact-links {
@@ -230,12 +231,12 @@ footer section {
   font-size: 18px;
   font-weight: bold;
   height: 80%;
-  margin-left: 5rem;
   margin-top: 2rem;
 }
 .my-adresse a {
   color: black;
   text-decoration: none;
+  margin-left: 1rem;
 }
 /** Blog page **/
 
@@ -253,6 +254,9 @@ main {
   height: 100%;
   width: 80%;
   margin: auto;
+  padding: 1rem;
+  background-color: #F7F7F7;
+  border-radius: 10%;
 }
 .art-blog {
   width: 90%;
@@ -260,14 +264,23 @@ main {
   display: flex;
 }
 .blogpic {
-  background-color: rgba(173, 152, 145, 0.438);
-  height: 90%;
   width: 40%;
   margin: auto;
   margin-right: 0;
+  cursor: pointer;
+  border: 2px solid black;
+  box-shadow: 3px 3px 5px #aaaaaa;
+}
+.blogpic:hover {
+  box-shadow: 10px 10px 8px #aaaaaa;
 }
 .bloginfo {
+  margin-left: 4rem;
   width: 50%;
+  font-size: 18px;
+}
+#more {
+  display: none;
 }
 /** Work page**/
 .work-nav {
@@ -279,13 +292,13 @@ main .projects {
   height: 100%;
   width: 100%;
   margin: auto;
-  margin-top: 3rem;
+  margin-left: 10%;
   display: flex;
   flex-wrap: wrap;
 }
 main .projects .project1, .project2, .project3 {
-  height: 80%;
-  width: 26%;
+  height: 70%;
+  width: 20%;
   margin: 40px;
   border: 1px solid black;
   box-shadow: 3px 3px 5px #aaaaaa;
@@ -364,6 +377,7 @@ main .projects .project1:hover{
   flex-direction: column;
   margin: auto;
   margin-top: 13rem;
+  margin-left: 0;
  }
  form {
   text-align: center;
@@ -403,9 +417,9 @@ main .projects .project1:hover{
  .bogmain {
    margin: 0;
  }
-.blogpic {
- height: 50%;
- width: 70%;
+.myblog {
+  margin-top: 5rem;
+  height: 50%;
 }
 .bloginfo {
  height: 50%;
@@ -491,8 +505,7 @@ main .projects .project1:hover{
    }
    .about-title {
      font-size: 12px;
-     padding: 0;
-     padding-right: 15px;
+     padding: 0 17px 0 0;
      margin-top: 2rem;
    }
    .about-title p{
@@ -562,9 +575,15 @@ main .projects .project1:hover{
      width: 23rem;
    }
    .myblog {
-     margin-top: 3rem;
+     margin-top: 8rem;
+     width: auto;
+     height: auto;
+   }
+   .art-blog {
+     width: 100%;
    }
    .bloginfo {
+     margin-left: 0;
      font-size: 12px;
    }
    .btnblog {
@@ -572,5 +591,6 @@ main .projects .project1:hover{
    }
    .blogpic {
      height: 40%;
+    margin-left: 1rem;
    }
  }
