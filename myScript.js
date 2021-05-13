@@ -27,10 +27,13 @@ function readMore() {
 
 /**this is for when click change size the image of blogs*/
 let changeSz = document.querySelector(".blogpic");
+let hideBlog = document.querySelector(".bloginfo");
 function changeSize () {
   if(changeSz.style.width === "40%"){
-  changeSz.style.width="75%";
+  changeSz.style.width="90%";
+  hideBlog.style.display = "none";
 } else {
   changeSz.style.width="40%";
+  hideBlog.style.display = "inline";
 }
 }
