@@ -455,7 +455,7 @@ main .projects .project1:hover{
    .line {
      width: 30px;
      height: 3px;
-     background-color: #2C6C7E;
+     background-color: rgb(44, 108, 126);
      margin: 5px;
    }
   
