@@ -162,6 +162,9 @@ footer section {
   height: 22rem;
   margin-left: 10%;
 }
+.about-title h1 {
+  text-align: center;
+}
 .tenzinphoto {
   border-radius: 5%;
   height: 350px;
@@ -279,6 +282,9 @@ main {
   width: 50%;
   font-size: 18px;
   text-align: justify;
+}
+.bloginfo h2 {
+  text-align: center;
 }
 #more {
   display: none;
