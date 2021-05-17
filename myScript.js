@@ -2,10 +2,20 @@
 
 const hamburger = document.querySelector(".hamburger");
 const navName = document.querySelector(".nav-menu");
+const hamburgerLine = document.getElementsByClassName("line");
 
 hamburger.addEventListener("click", () => {
   navName.classList.toggle("open");
 });
+hamburger.addEventListener('click', () => {
+  for(let i = 0; i < hamburgerLine.length; i++) {
+    if(hamburgerLine[i].style.backgroundColor=="white") {
+      hamburgerLine[i].style.backgroundColor="rgb(44, 108, 126)";
+    } else {
+      hamburgerLine[i].style.backgroundColor="white";
+    } 
+  }
+})
 
 /**this is for the readmore function*/
 
