@@ -156,7 +156,7 @@ footer section {
   display: flex;
 }
 .about-title {
-  text-align: center;
+  text-align: justify;
   padding: 0 5rem 0 5rem;
   width: 50%;
   height: 22rem;
@@ -278,6 +278,7 @@ main {
   margin-left: 4rem;
   width: 50%;
   font-size: 18px;
+  text-align: justify;
 }
 #more {
   display: none;
@@ -417,10 +418,6 @@ main .projects .project1:hover{
  .bogmain {
    margin: 0;
  }
-.myblog {
-  margin-top: 5rem;
-  height: 50%;
-}
 .bloginfo {
  height: 50%;
  margin-top: 1rem;
