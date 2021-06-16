@@ -259,17 +259,17 @@ main {
   margin: auto;
   padding: 1rem;
   background-color: #F7F7F7;
-  border-radius: 10%;
+  border-radius: 25px;
 }
 .art-blog {
   width: 90%;
-  height: 60%;
   display: flex;
 }
 .blogpic {
   width: 40%;
   margin: auto;
   margin-right: 0;
+  margin-bottom: 2rem;
   cursor: pointer;
   border: 2px solid black;
   box-shadow: 3px 3px 5px #aaaaaa;
